@@ -51,7 +51,7 @@ class Customer {
   }
 
   meals() {
-    
+
   }
 }
 

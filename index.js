@@ -55,6 +55,14 @@ class Customer {
       return delivery.meal();
     });
   }
+
+  totalSpent() {
+    const priceTotaller = function(total, currentMeal) {
+      return total + currentMeal.price;
+    }
+    
+    return this.meals().reduce(priceTotaller, 0);
+  }
 }
 
 // Meal class

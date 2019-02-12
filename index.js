@@ -52,7 +52,7 @@ class Customer {
 
   meals() {
     this.deliveries().map(delivery => {
-
+      return delivery.meal();
     });
   }
 }

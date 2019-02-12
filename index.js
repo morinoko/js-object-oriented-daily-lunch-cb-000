@@ -31,7 +31,17 @@ class Neighborhood {
   }
 
   meals() {
+    const allMeals = this.deliveries().map(delivery => {
+      delivery.meal();
+    });
 
+    const uniqueMeals = allMeals.reduce(function (accumulator, currentMeal) {
+      if (accumulator.indexOf(currentMeal) === -1) {
+        accumulator.push(currentMeal);
+      }
+
+      return accumulator;
+    }, []);
   }
 }
 

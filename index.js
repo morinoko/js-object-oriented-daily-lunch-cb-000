@@ -69,7 +69,10 @@ class Meal {
 
     store.meals.push(this);
   }
-
+  static byPrice() {
+    
+  }
+  
   deliveries() {
     return store.deliveries.filter(delivery => {
       return delivery.mealId === this.id;;

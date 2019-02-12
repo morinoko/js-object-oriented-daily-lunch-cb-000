@@ -40,7 +40,7 @@ class Neighborhood {
         meal.push(currentMeal);
       }
     }
-    
+
     return allMeals.reduce(uniqueMealReducer, []);
   }
 }

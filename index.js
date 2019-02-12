@@ -70,7 +70,7 @@ class Meal {
     store.meals.push(this);
   }
   static byPrice() {
-    
+
   }
   
   deliveries() {

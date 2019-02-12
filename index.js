@@ -81,6 +81,10 @@ class Meal {
       return delivery.customer();
     });
   }
+
+  byPrice() {
+    
+  }
 }
 
 // Delivery class

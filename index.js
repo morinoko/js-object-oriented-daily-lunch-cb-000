@@ -52,11 +52,11 @@ class Meal {
 let deliveryId = 0;
 
 class Delivery {
-  constructor(meal, neighborhood, customer) {
+  constructor(mealId, neighborhoodId, customerId) {
     this.id = ++deliveryId;
-    this.mealId = meal.id;
-    this.neighborhoodId = neighborhood.id;
-    this.customerId = customer.id;
+    this.mealId = mealId;
+    this.neighborhoodId = neighborhoodId;
+    this.customerId = customerId;
 
     store.deliveries.push(this);
   }

@@ -35,10 +35,14 @@ class Neighborhood {
       delivery.meal();
     });
 
-    const uniqueMeals = allMeals.reduce(function (accumulator, currentMeal) {
-      if (accumulator.indexOf(currentMeal) === -1) {
-        accumulator.push(currentMeal);
+    const accumulatorFunction = function(meals, currentMeal) {
+      if (meals.indexOf(currentMeal) === -1) {
+        meal.push(currentMeal);
       }
+    }
+    
+    const uniqueMeals = allMeals.reduce(function (accumulator, currentMeal) {
+      
 
       return accumulator;
     }, []);

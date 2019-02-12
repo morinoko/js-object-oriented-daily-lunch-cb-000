@@ -60,7 +60,7 @@ class Customer {
     const priceTotaller = function(total, currentMeal) {
       return total + currentMeal.price;
     }
-    
+
     return this.meals().reduce(priceTotaller, 0);
   }
 }

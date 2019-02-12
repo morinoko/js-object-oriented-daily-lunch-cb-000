@@ -28,6 +28,8 @@ class Customer {
     this.id = ++customerId;
     this.name = name;
     this.neighborhoodId = neighborhood.id;
+
+    store.customers.push(this);
   }
 }
 

@@ -51,7 +51,7 @@ class Customer {
   }
 
   meals() {
-
+    
   }
 }
 
@@ -88,4 +88,11 @@ class Delivery {
 
     store.deliveries.push(this);
   }
+}
+
+// Other
+function findMealById(mealId) {
+  return store.meals.find(meal => {
+    return meal.id === mealId;
+  })
 }

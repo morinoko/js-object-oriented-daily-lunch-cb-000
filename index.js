@@ -29,6 +29,10 @@ class Neighborhood {
       return customer.neighborhoodId === this.id;
     });
   }
+
+  meals() {
+    
+  }
 }
 
 // Customer class

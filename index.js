@@ -17,6 +17,12 @@ class Neighborhood {
 
     store.neighborhoods.push(this);
   }
+
+  deliveries() {
+    return store.deliveries.filter(delivery => {
+      return delivery.id === this.deliveryId;
+    });
+  }
 }
 
 // Customer class

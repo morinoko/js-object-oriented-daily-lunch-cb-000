@@ -31,7 +31,7 @@ class Neighborhood {
   }
 
   meals() {
-    
+
   }
 }
 

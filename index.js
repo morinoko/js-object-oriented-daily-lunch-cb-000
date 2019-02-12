@@ -35,17 +35,13 @@ class Neighborhood {
       delivery.meal();
     });
 
-    const accumulatorFunction = function(meals, currentMeal) {
+    const uniqueMealReducer = function(meals, currentMeal) {
       if (meals.indexOf(currentMeal) === -1) {
         meal.push(currentMeal);
       }
     }
-
-    const uniqueMeals = allMeals.reduce(function (accumulator, currentMeal) {
-
-
-      return accumulator;
-    }, []);
+    
+    return allMeals.reduce(uniqueMealReducer, []);
   }
 }
 

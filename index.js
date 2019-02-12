@@ -31,9 +31,7 @@ class Neighborhood {
   }
 
   meals() {
-    const allMeals = this.deliveries().map(delivery => {
-      delivery.meal();
-    });
+    const deliveries = this.deliveries();
 
     const uniqueMealReducer = function(meals, currentMeal) {
       if (meals.indexOf(currentMeal) === -1) {

@@ -75,6 +75,12 @@ class Meal {
       return delivery.mealId === this.id;;
     });
   }
+
+  customers() {
+    return this.deliveries().map(delivery => {
+      return delivery.customer();
+    });
+  }
 }
 
 // Delivery class
@@ -108,11 +114,4 @@ class Delivery {
       return neighborhood.id === this.neighborhoodId;
     })
   }
-}
-
-// Other
-function findMealById(mealId) {
-  return store.meals.find(meal => {
-    return meal.id === mealId;
-  })
 }

@@ -37,7 +37,7 @@ class Neighborhood {
 
     const uniqueMealReducer = function(meals, currentMeal) {
       if (meals.indexOf(currentMeal) === -1) {
-        meal.push(currentMeal);
+        meals.push(currentMeal);
       }
     }
 

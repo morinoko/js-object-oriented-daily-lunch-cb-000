@@ -39,6 +39,8 @@ class Neighborhood {
       if (meals.indexOf(currentMeal) === -1) {
         meals.push(currentMeal);
       }
+
+      return meals;
     }
 
     return allMeals.reduce(uniqueMealReducer, []);

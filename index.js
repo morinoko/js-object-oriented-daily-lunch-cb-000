@@ -69,15 +69,15 @@ class Meal {
 
     store.meals.push(this);
   }
-  
+
   static byPrice() {
     const priceSorter = function(mealA, mealB) {
       return mealA.price - mealB.price;
     };
-    
+
     return store.meals.sort(priceSorter);
   }
-  
+
   deliveries() {
     return store.deliveries.filter(delivery => {
       return delivery.mealId === this.id;;

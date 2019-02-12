@@ -40,9 +40,9 @@ class Neighborhood {
         meal.push(currentMeal);
       }
     }
-    
+
     const uniqueMeals = allMeals.reduce(function (accumulator, currentMeal) {
-      
+
 
       return accumulator;
     }, []);
